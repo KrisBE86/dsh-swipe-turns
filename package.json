@@ -1,0 +1,27 @@
+{
+  "name": "dsh-swipe-turns",
+  "description": "DeepSeek Harness Web/桌面客户端插件：把会话里的问答轮次变成左右切换的卡片，底部横向概要栏替代右侧轮次导航。",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT"
+}

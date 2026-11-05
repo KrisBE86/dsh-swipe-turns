@@ -1,0 +1,4 @@
+# 组合包 patch：把本插件的行插入 profile 的插件组合。
+- insert:
+    - id: ui-swipe-turns
+      name: 'dsh-swipe-turns'
